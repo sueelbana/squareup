@@ -9,6 +9,7 @@ export default {
       colors: {
         brand: "rgba(15, 15, 15, 1)",
         button: "rgba(158, 255, 0, 1)",
+        secondbutton: "rgba(51, 51, 51, 1)",
       },
       fontFamily: {
         barlow: ["Barlow", "sans-serif"],
