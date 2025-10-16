@@ -1,5 +1,9 @@
 import React from "react";
 import servicesBg from "../assets/service.jpg";
+import DesignServices from "../components/DesignServices";
+import EngineeringServices from "../components/EngineeringServices";
+import ProjectManagementServices from "../components/ProjectManagementServices";
+import StartProject from "../components/StartProject"; // ✅ Imported new component
 
 export default function ServicesPage() {
   return (
@@ -15,6 +19,26 @@ export default function ServicesPage() {
           />
         </div>
       </section>
+
+      {/* Design Services Section */}
+      <div className="w-full mt-12">
+        <DesignServices />
+      </div>
+
+      {/* Engineering Services Section */}
+      <div className="w-full mt-12">
+        <EngineeringServices />
+      </div>
+
+      {/* Project Management Services Section */}
+      <div className="w-full mt-12">
+        <ProjectManagementServices />
+      </div>
+
+      {/* Start Project Section */}
+      <div className="w-full mt-12 mb-20">
+        <StartProject />
+      </div>
     </div>
   );
 }
