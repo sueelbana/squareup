@@ -63,7 +63,8 @@ export default function DesignServices() {
         {sections.map((section, idx) => (
           <div key={idx}>
             <h3 className="text-xl font-semibold mb-6">{section.title}</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {/* Updated grid: 2 columns on small, 4 on md+ */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {section.items.map((item, index) => (
                 <div
                   key={index}

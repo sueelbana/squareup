@@ -70,7 +70,9 @@ export default function ProjectManagementServices() {
             <h3 className="text-xl md:text-2xl font-semibold mb-6 text-white">
               {section.title}
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            {/* ✅ Updated grid: 2 per row on small, 4 per row on large */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}

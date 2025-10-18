@@ -62,14 +62,19 @@ export default function EngineeringServices() {
         {sections.map((section, index) => (
           <div key={index}>
             <h3 className="text-lg font-semibold mb-6">{section.title}</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {/* ✅ Updated grid layout: 2 per row on small, 4 per row on large */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {section.items.map((item, i) => (
                 <div
                   key={i}
                   className="bg-[#0E0E0E] border border-gray-800 rounded-md p-6 hover:scale-[1.02] transition-transform"
                 >
                   <div className="w-12 h-12 flex items-center justify-center mb-4">
-                    <img src={item.icon} alt="service icon" className="w-12 h-12 object-contain" />
+                    <img
+                      src={item.icon}
+                      alt="service icon"
+                      className="w-12 h-12 object-contain"
+                    />
                   </div>
                   <p className="text-gray-300 text-sm leading-relaxed">{item.text}</p>
                 </div>
