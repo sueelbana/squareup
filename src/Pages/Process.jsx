@@ -1,9 +1,9 @@
 import React from "react";
-import workBg from "../assets/work.jpg";
-import AtSquareUp from "../components/AtSquareUp";
-import StartProject from "../components/StartProject";
+import processBg from "../assets/process.jpg";
+import Categories from "../components/Categories";
+import ContactForm from "../components/ContactForm";
 
-export default function WorkPage() {
+export default function ProcessPage() {
   return (
     <div className="min-h-screen bg-brand text-white flex flex-col items-center">
       {/* Hero Section */}
@@ -11,20 +11,19 @@ export default function WorkPage() {
         <div className="relative w-[98%] md:w-[90%] lg:w-[85%] rounded-2xl overflow-hidden shadow-lg">
           {/* Centered Image */}
           <img
-            src={workBg}
+            src={processBg}
             alt="Our Work"
-            className="w-full h-[220px] md:h-[260px] object-cover"
+            className="w-full h-[200px] md:h-[240px] object-cover"
           />
         </div>
       </section>
 
-      {/* Work Section */}
-      <div className="w-full mt-12 mb-20">
-        <AtSquareUp /> {/* ✅ Added here */}
+      {/* Process Section */}
+      <div className="w-full mt-10">
+        <Categories />
       </div>
-      {/* Start Project Section */}
-      <div className="w-full mt-12 mb-20">
-        <StartProject />
+          <div className="w-full mt-10">
+        <ContactForm />
       </div>
     </div>
   );

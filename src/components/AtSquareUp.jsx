@@ -94,11 +94,18 @@ export default function AtSquareUp() {
           <h2 className="text-2xl md:text-3xl font-semibold mb-2">
             At SquareUp
           </h2>
+
           <p className="text-gray-400 max-w-2xl text-xs md:text-sm leading-relaxed">
             We’ve successfully worked with a diverse range of clients and
-            delivered exceptional digital products across industries. <br />
-            Here are some examples of our remarkable works:
+            delivered exceptional digital products across industries.
           </p>
+
+          {/* Gray Box */}
+          <div className="bg-gray-800 rounded-lg p-3 mt-4 inline-block">
+            <p className="text-gray-300 text-xs md:text-sm leading-relaxed m-0">
+              Here’s an overview of our typical process:
+            </p>
+          </div>
         </div>
 
         {/* Projects Grid */}

@@ -12,6 +12,7 @@ import ContactForm from "./components/ContactForm";
 // Import the new Services page from pages folder if it's there:
 import ServicesPage from "./Pages/Services"; 
 import WorkPage from "./Pages/Work";
+import ProcessPage from "./Pages/Process";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           {/* ✅ New standalone Services page route */}
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/work" element={<WorkPage />} />
+          <Route path="/process" element={<ProcessPage />} />
 
         </Route>
       </Routes>
