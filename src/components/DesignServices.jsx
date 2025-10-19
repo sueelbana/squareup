@@ -46,7 +46,6 @@ export default function DesignServices() {
 
   return (
     <section className="bg-brand text-white py-20 px-6">
-      {/* Header */}
       <div className="max-w-5xl mx-auto mb-12 text-left">
         <h2 className="text-3xl font-semibold mb-4">Design</h2>
         <p className="text-gray-400 text-sm md:text-base leading-relaxed">
@@ -58,12 +57,10 @@ export default function DesignServices() {
         </button>
       </div>
 
-      {/* Sections */}
       <div className="space-y-12 max-w-6xl mx-auto">
         {sections.map((section, idx) => (
           <div key={idx}>
             <h3 className="text-xl font-semibold mb-6">{section.title}</h3>
-            {/* Updated grid: 2 columns on small, 4 on md+ */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {section.items.map((item, index) => (
                 <div

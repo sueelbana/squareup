@@ -7,7 +7,6 @@ export default function ContactForm() {
 
   return (
     <section className="bg-brand text-white flex flex-col items-center py-20">
-      {/* Top Hero Section */}
       <div
         className="relative w-full max-w-5xl rounded-2xl overflow-hidden mb-16"
         style={{
@@ -34,9 +33,7 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Contact Form */}
       <form className="w-full max-w-4xl bg-[#0f0f0f] border border-gray-800 rounded-2xl p-8 space-y-8">
-        {/* Name & Email */}
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <label className="block text-gray-400 mb-2">Full Name</label>
@@ -56,7 +53,6 @@ export default function ContactForm() {
           </div>
         </div>
 
-        {/* Reason Section */}
         <div>
           <label className="block text-gray-400 mb-2">
             Why are you contacting us?
@@ -79,7 +75,6 @@ export default function ContactForm() {
           </div>
         </div>
 
-        {/* Budget Section */}
         <div>
           <label className="block text-gray-400 mb-4">Your Budget</label>
           <div className="bg-[#1a1a1a] border border-gray-700 p-6 rounded-md">
@@ -106,7 +101,6 @@ export default function ContactForm() {
           </div>
         </div>
 
-        {/* Message */}
         <div>
           <label className="block text-gray-400 mb-2">Your Message</label>
           <textarea
@@ -116,7 +110,6 @@ export default function ContactForm() {
           ></textarea>
         </div>
 
-        {/* Submit Button */}
         <div className="text-center">
           <button
             type="submit"

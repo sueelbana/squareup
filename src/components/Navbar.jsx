@@ -18,7 +18,6 @@ export default function Navbar() {
   return (
     <nav className="bg-brand text-white px-6 sm:px-8 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Left: Logo */}
         <Link to="/" className="flex items-center space-x-3">
           <img
             src={logo}
@@ -28,7 +27,6 @@ export default function Navbar() {
           <h1 className="font-semibold text-lg">SquareUp</h1>
         </Link>
 
-        {/* Desktop Links */}
         <ul className="hidden md:flex space-x-4 text-sm text-gray-300">
           {navItems.map((item) => (
             <li key={item.name}>
@@ -42,7 +40,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Desktop Button */}
         <Link
           to="/contact"
           className="hidden md:block bg-button text-black px-4 py-2 rounded-md font-semibold hover:bg-lime-400 transition"
@@ -50,7 +47,6 @@ export default function Navbar() {
           Contact Us
         </Link>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden focus:outline-none"
@@ -59,7 +55,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden mt-4 space-y-2 bg-neutral-900 rounded-lg p-4 shadow-lg">
           {navItems.map((item) => (

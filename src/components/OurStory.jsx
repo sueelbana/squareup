@@ -43,21 +43,18 @@ export default function OurStory() {
   return (
     <section className="bg-brand text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="text-left mb-10">
           <h2 className="text-3xl md:text-4xl font-semibold mb-6">
             Our Story
           </h2>
         </div>
 
-        {/* Story Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {storySteps.map((step, index) => (
             <div
               key={index}
               className="bg-[#181818] p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
             >
-              {/* Number + Title beside each other */}
               <div className="flex items-center space-x-4 mb-2">
                 <h3
                   className="text-[rgba(216,255,153,1)] text-6xl font-bold"

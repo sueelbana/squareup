@@ -67,7 +67,6 @@ export default function FAQSection() {
     >
       <div className="flex justify-between items-start">
         <div className="flex items-start sm:items-center gap-4">
-          {/* Rounded Number Box */}
           <div
             className={`w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-md text-sm sm:text-base font-semibold flex-shrink-0 ${
               openId === faq.id
@@ -78,31 +77,24 @@ export default function FAQSection() {
             {faq.id.toString().padStart(2, "0")}
           </div>
 
-          {/* Question Text */}
           <p
             className={`font-semibold text-base sm:text-lg leading-snug ${
-              openId === faq.id
-                ? "text-[rgba(216,255,153,1)]"
-                : "text-white"
+              openId === faq.id ? "text-[rgba(216,255,153,1)]" : "text-white"
             }`}
           >
             {faq.question}
           </p>
         </div>
 
-        {/* Expand/Collapse Icon */}
         <span
           className={`text-lg sm:text-xl font-bold ${
-            openId === faq.id
-              ? "text-[rgba(216,255,153,1)]"
-              : "text-gray-400"
+            openId === faq.id ? "text-[rgba(216,255,153,1)]" : "text-gray-400"
           }`}
         >
           {openId === faq.id ? "×" : "+"}
         </span>
       </div>
 
-      {/* Answer */}
       {openId === faq.id && (
         <p className="text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed">
           {faq.answer}
@@ -113,16 +105,14 @@ export default function FAQSection() {
 
   return (
     <section className="bg-brand text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
-      {/* Header Image */}
       <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-16">
         <img
           src={faqHeading}
           alt="Frequently Asked Questions"
-          className="mx-auto w-full max-w-3xl h-auto rounded-lg object-cover"
+          className="mx-auto w-[98%] sm:w-full h-[160px] sm:h-[200px] md:h-[240px] lg:h-[260px] rounded-lg object-cover"
         />
       </div>
 
-      {/* Two-column FAQ layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
         <div>{leftFaqs.map(renderFaqBox)}</div>
         <div>{rightFaqs.map(renderFaqBox)}</div>

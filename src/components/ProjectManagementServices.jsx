@@ -47,7 +47,6 @@ export default function ProjectManagementServices() {
   return (
     <section className="w-full px-6 md:px-16 py-12 bg-brand text-gray-100">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="mb-10">
           <h2 className="text-3xl md:text-4xl font-semibold mb-3 text-white">
             Project Management
@@ -64,14 +63,12 @@ export default function ProjectManagementServices() {
           </button>
         </div>
 
-        {/* Service Sections */}
         {sections.map((section, index) => (
           <div key={index} className="mb-10">
             <h3 className="text-xl md:text-2xl font-semibold mb-6 text-white">
               {section.title}
             </h3>
 
-            {/* ✅ Updated grid: 2 per row on small, 4 per row on large */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {section.items.map((item, idx) => (
                 <div

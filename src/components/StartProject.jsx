@@ -5,7 +5,6 @@ import contactBg from "../assets/container-bg.jpg";
 export default function StartProject() {
   return (
     <section className="bg-brand text-white flex flex-col items-center py-20">
-      {/* Top Hero Section */}
       <div
         className="relative w-full max-w-5xl rounded-2xl overflow-hidden mb-16"
         style={{
@@ -14,10 +13,8 @@ export default function StartProject() {
           backgroundPosition: "center",
         }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
-        {/* Content */}
         <div className="relative z-10 text-center py-20 px-6">
           <img src={logo} alt="Logo" className="w-16 mx-auto mb-4" />
           <h2 className="text-2xl md:text-3xl font-barlow font-semibold mb-4">

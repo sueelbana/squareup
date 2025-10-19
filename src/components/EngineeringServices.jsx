@@ -45,7 +45,6 @@ export default function EngineeringServices() {
 
   return (
     <section className="bg-brand text-white py-16 px-6">
-      {/* Header */}
       <div className="max-w-5xl mx-auto mb-12">
         <h2 className="text-2xl font-semibold mb-2">Engineering</h2>
         <p className="text-gray-400 text-sm mb-6">
@@ -57,12 +56,10 @@ export default function EngineeringServices() {
         </button>
       </div>
 
-      {/* Services Sections */}
       <div className="max-w-6xl mx-auto space-y-12">
         {sections.map((section, index) => (
           <div key={index}>
             <h3 className="text-lg font-semibold mb-6">{section.title}</h3>
-            {/* ✅ Updated grid layout: 2 per row on small, 4 per row on large */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {section.items.map((item, i) => (
                 <div

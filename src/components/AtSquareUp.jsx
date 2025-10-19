@@ -89,7 +89,6 @@ export default function AtSquareUp() {
   return (
     <section className="bg-brand text-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="text-left mb-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-2">
             At SquareUp
@@ -100,7 +99,6 @@ export default function AtSquareUp() {
             delivered exceptional digital products across industries.
           </p>
 
-          {/* Gray Box */}
           <div className="bg-gray-800 rounded-lg p-3 mt-4 inline-block">
             <p className="text-gray-300 text-xs md:text-sm leading-relaxed m-0">
               Here’s an overview of our typical process:
@@ -108,26 +106,22 @@ export default function AtSquareUp() {
           </div>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
           {projects.map((project, index) => (
             <div
               key={index}
               className="bg-[#121212] border border-gray-800 rounded-xl overflow-hidden hover:border-lime-400 transition-all duration-300"
             >
-              {/* Category above image */}
               <div className="p-3">
                 <p className="text-sm text-gray-500 mb-2">{project.category}</p>
               </div>
 
-              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-40 object-cover"
               />
 
-              {/* Text content */}
               <div className="p-4">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-base font-semibold">{project.title}</h3>

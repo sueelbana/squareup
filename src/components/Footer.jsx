@@ -5,15 +5,12 @@ import logo from "../assets/logo.jpg";
 export default function Footer() {
   return (
     <footer className="bg-[#0d0d0d] text-gray-400 py-10 px-6 md:px-16">
-      {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-8 mb-6">
-        {/* Left - Logo */}
         <div className="flex items-center space-x-3 mb-6 md:mb-0">
           <img src={logo} alt="SquareUp Logo" className="w-10 h-10" />
           <span className="text-white font-barlow font-semibold text-lg">SquareUp</span>
         </div>
 
-        {/* Center - Navigation */}
         <ul className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
           <li className="hover:text-lime-400 transition">Home</li>
           <li className="hover:text-lime-400 transition">Services</li>
@@ -24,7 +21,6 @@ export default function Footer() {
           <li className="hover:text-lime-400 transition">Contact</li>
         </ul>
 
-        {/* Right - Social Icons */}
         <div className="flex items-center space-x-4 mt-6 md:mt-0">
           <span className="text-sm text-white mr-2">Stay Connected</span>
           <div className="flex space-x-3">
@@ -41,7 +37,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
         <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
           <div className="flex items-center space-x-2">

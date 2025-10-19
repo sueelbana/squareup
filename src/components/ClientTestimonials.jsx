@@ -68,33 +68,28 @@ const testimonials = [
 export default function ClientTestimonials() {
   return (
     <section className="bg-brand text-white py-16 sm:py-20 px-4 sm:px-6 md:px-10">
-      {/* Header */}
       <div className="text-center max-w-5xl mx-auto mb-10 sm:mb-14">
         <img
           src={headingImg}
           alt="What our Clients say About us"
-          className="mx-auto w-full max-w-4xl h-auto object-contain"
+          className="mx-auto w-[98%] sm:w-[95%] lg:w-full max-w-4xl h-[180px] sm:h-[220px] md:h-[240px] lg:h-auto object-contain"
         />
       </div>
 
-      {/* Testimonials Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
             className="bg-[#101010] border border-neutral-700 p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
           >
-            {/* Main text with your color */}
             <p className="font-medium mb-3 text-[rgba(216,255,153,1)] text-base sm:text-lg leading-snug">
               {testimonial.text}
             </p>
 
-            {/* Subtext */}
             <p className="text-gray-400 mb-6 text-sm sm:text-base leading-relaxed">
               {testimonial.subtext}
             </p>
 
-            {/* Footer */}
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
               <div className="flex items-center gap-3">
                 <img

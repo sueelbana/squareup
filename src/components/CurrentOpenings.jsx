@@ -1,6 +1,4 @@
 import React from "react";
-
-// ✅ Import icons from assets
 import uiIcon from "../assets/1.jpg";
 import uxIcon from "../assets/2.jpg";
 import designIcon from "../assets/3.jpg";
@@ -112,7 +110,6 @@ export default function CurrentOpenings() {
 
   return (
     <section className="w-full bg-[#0f0f0f] text-white py-16 px-6 md:px-12">
-      {/* Header */}
       <div className="max-w-6xl mx-auto mb-10">
         <h2 className="text-3xl font-semibold mb-3">Current Openings</h2>
         <p className="text-gray-400 text-sm md:text-base max-w-2xl">
@@ -122,7 +119,6 @@ export default function CurrentOpenings() {
         </p>
       </div>
 
-      {/* Job Sections */}
       <div className="max-w-6xl mx-auto flex flex-col gap-10">
         {jobCategories.map((category, index) => (
           <div key={index}>

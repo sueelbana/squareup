@@ -36,16 +36,14 @@ export default function WhyChooseSquareUp() {
   return (
     <section className="bg-brand text-gray-200 py-16 sm:py-20 px-4 sm:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto text-center">
-        {/* Responsive header image */}
         <div className="flex justify-center mb-10 sm:mb-16">
           <img
             src={whyChooseImage}
             alt="Why Choose SquareUp"
-            className="w-full max-w-5xl h-auto object-cover rounded-lg"
+            className="w-[95%] sm:w-[90%] lg:w-full max-w-5xl h-[160px] sm:h-[200px] md:h-[240px] lg:h-auto object-cover rounded-lg"
           />
         </div>
 
-        {/* Features grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 sm:gap-10">
           {features.map((feature, index) => (
             <div

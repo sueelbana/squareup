@@ -27,7 +27,6 @@ export default function CareerIntro() {
   return (
     <section className="bg-[#0f0f0f] text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Top Content */}
         <div className="text-left mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold mb-3">
             Welcome to SquareUp, where talent meets opportunity!
@@ -45,7 +44,6 @@ export default function CareerIntro() {
           </button>
         </div>
 
-        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <div

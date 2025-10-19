@@ -18,12 +18,10 @@ const Companies = () => {
 
   return (
     <section className="bg-brand text-gray-300 text-center py-12 px-4 sm:px-6 md:px-10">
-      {/* Title inside rounded container */}
       <div className="inline-block bg-[#111111] border border-gray-700 text-gray-400 text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2 rounded-full mb-10">
         Trusted by 250+ Companies
       </div>
 
-      {/* Logos Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 sm:gap-10 md:gap-12 items-center justify-items-center max-w-6xl mx-auto">
         {logos.map((logo) => (
           <img

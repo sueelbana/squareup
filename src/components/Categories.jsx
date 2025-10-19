@@ -54,7 +54,6 @@ const steps = [
 export default function Categories() {
   return (
     <div className="min-h-screen bg-brand text-white py-16 px-4 max-w-6xl mx-auto">
-      {/* Header */}
       <div className="text-left mb-8">
         <h2 className="text-2xl md:text-3xl font-semibold mb-2">At SquareUp</h2>
 
@@ -63,7 +62,6 @@ export default function Categories() {
           delivered exceptional digital products across industries.
         </p>
 
-        {/* Gray Box */}
         <div className="bg-gray-800 rounded-lg p-3 mt-4 inline-block">
           <p className="text-gray-300 text-xs md:text-sm leading-relaxed m-0">
             Here’s an overview of our typical process:
@@ -71,14 +69,12 @@ export default function Categories() {
         </div>
       </div>
 
-      {/* Steps Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {steps.map((step) => (
           <div
             key={step.number}
             className="bg-brand rounded-xl p-6 text-left border border-neutral-800 hover:border-[rgba(216,255,153,1)] transition-all duration-300"
           >
-            {/* Number + Title beside each other */}
             <div className="flex items-center space-x-4 mb-2">
               <h3
                 className="text-6xl font-bold"
