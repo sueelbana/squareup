@@ -46,7 +46,7 @@ export default function SquareUpAgency() {
             </div>
           </div>
 
-          <button className="bg-lime-400 text-black font-medium px-3.5 py-2 text-sm rounded-md hover:bg-lime-300 transition flex items-center gap-1 whitespace-nowrap mt-3 md:mt-0 md:ml-4">
+          <button className="bg-[rgba(158,255,0,1)] text-black font-medium px-3.5 py-2 text-sm rounded-md hover:bg-lime-300 transition flex items-center gap-1 whitespace-nowrap mt-3 md:mt-0 md:ml-4">
             Start Project
           </button>
         </div>

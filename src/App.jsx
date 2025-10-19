@@ -12,6 +12,7 @@ import ServicesPage from "./Pages/Services";
 import WorkPage from "./Pages/Work";
 import ProcessPage from "./Pages/Process";
 import AboutUsPage from "./Pages/AboutUs";
+import CareerPage from "./Pages/Careers";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/work" element={<WorkPage />} />
           <Route path="/process" element={<ProcessPage />} />
           <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/careers" element={<CareerPage />} />
 
         </Route>
       </Routes>
